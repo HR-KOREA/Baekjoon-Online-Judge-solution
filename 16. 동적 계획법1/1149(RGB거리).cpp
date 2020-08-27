@@ -24,6 +24,5 @@ int main()
 		dp[i][2] = min(dp[i - 1][0], dp[i - 1][1]) + house[i][2];
 	}
 	cout << min(min(dp[n][0], dp[n][1]), dp[n][2]) << "\n";
-
 	return 0;
 }
